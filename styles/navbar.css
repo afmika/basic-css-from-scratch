@@ -1,0 +1,49 @@
+/**
+ * @author afmika
+ *
+ * This project is under the MIT License
+ */
+.basic-navbar {
+    background-color: var(--nav-color-bg);
+    overflow: hidden;
+} 
+.basic-navbar a {
+    float: left;
+    display: block;
+    color: var(--nav-text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.basic-navbar a:hover { color: var(--nav-color-hover); }
+
+/* highlight */
+.basic-navbar a.is-active {
+    background-color: var(--nav-color-active);
+    color: var(--nav-color-hover-active);
+}
+.basic-navbar .icon-if-small { display: none; }
+
+ /* Handling responsiveness */
+
+ @media screen and (max-width: 600px) {
+    .basic-navbar a:not(:first-child) { display: none; }
+    .basic-navbar a.icon-if-small {
+        float: right;
+        display: block;
+    }
+}  
+@media screen and (max-width: 600px) {
+    .basic-navbar.responsive { position: relative; }
+    .basic-navbar.responsive a.icon-if-small {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .basic-navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+} 

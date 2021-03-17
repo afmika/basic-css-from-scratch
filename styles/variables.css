@@ -24,4 +24,10 @@
     /* table and global theme */
     --standard-global-font: Arial, Helvetica, sans-serif;
     --standard-global-color: #91b3d1;
+
+    --nav-color-active: #2b73c5;
+    --nav-text-color: #fff;
+    --nav-color-hover-active: #fff;
+    --nav-color-bg: var(--standard-global-color);
+    --nav-color-hover: rgb(17, 3, 3);
 }

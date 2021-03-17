@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <title>U-Mobile</title>
+</head>
+<body>
+    <div class="basic-navbar" id="id-basic-nav">
+        <a href="#home" class="is-active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon-if-small" onclick="toggle()">
+            <i>Menu</i>
+        </a>
+    </div>
+    <script>
+        function toggle () {
+            const nav = document.getElementById("id-basic-nav");
+            if (nav.className === "basic-navbar") {
+                nav.className += " responsive";
+                return;
+            }
+            nav.className = "basic-navbar";
+        } 
+    </script>
+</body>
+</html>
+

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,18 +7,80 @@
     <link rel="stylesheet" href="styles/buttons.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="styles/navbar.css">
     <title>U-Mobile</title>
 </head>
 <body>
-    <div class="basic-container center" width="200">
-        <button class="btn-color-very-dark">very-dark</button>
-        <button class="btn-color-dark">dark</button>
-        <button class="btn-color-primary">primary</button>
-        <button class="btn-color-success">success</button>
-        <button class="btn-color-danger">danger</button>
-        <div style="width:300px">
-            <button class="btn-large btn-color-primary">Some large btn</button>
+    <div class="basic-navbar" id="id-basic-nav">
+        <a href="#home" class="is-active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon-if-small" onclick="toggle()">
+            <i>Menu</i>
+        </a>
+    </div>
+    <div class="flex-container">
+        <div class="flex-it"></div>
+        <div class="flex-it"></div>
+        <div class="flex-it"></div>
+        <div class="basic-responsive">
+            <table class="basic-table">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Pseudo</th>
+                    <th>Ability</th>
+                    <th>Level</th>
+                    <th>Score</th>
+                </tr>    
+                <tr>
+                    <td class="txt-at-left">PL_1</td>
+                    <td class="txt-at-left">John Smith</td>
+                    <td class="txt-at-left">jssm</td>
+                    <td class="txt-at-left">Heal</td>
+                    <td class="txt-at-right">+47</td>
+                    <td class="txt-at-right">100000</td>
+                </tr>
+                <tr>
+                    <td class="txt-at-left">PL_2</td>
+                    <td class="txt-at-left">Mc Loyd</td>
+                    <td class="txt-at-left">lo1d</td>
+                    <td class="txt-at-left">Dark magic</td>
+                    <td class="txt-at-right">+50</td>
+                    <td class="txt-at-right">250000</td>
+                </tr>
+            </table>
         </div>
     </div>
+
+    <div class="flex-container">
+        <div class="flex-it"></div>
+        <div class="flex-it"></div>
+        <div class="flex-it"></div>
+        <div class="basic-container" width="200">
+            <button class="btn-color-very-dark">very-dark</button>
+            <button class="btn-color-dark">dark</button>
+            <button class="btn-color-primary">primary</button>
+            <button class="btn-color-success">success</button>
+            <button class="btn-color-danger">danger</button>
+            <div style="width:300px">
+                <button class="btn-large btn-color-primary">Some large btn</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        function toggle () {
+            const nav = document.getElementById("id-basic-nav");
+            if (nav.className === "basic-navbar") {
+                nav.className += " responsive";
+                return;
+            }
+            nav.className = "basic-navbar";
+        } 
+    </script>
 </body>
 </html>
