@@ -1,0 +1,12 @@
+/*
+    All CSS variables of this small framework will be put in there
+*/
+:root {
+    /* Color from bootstrap */
+    --color-primary: #337ab7;
+    --color-success: #5cb85c;
+    --color-danger: #d9534f;
+    --color-border:#d8d8d8;
+    --color-dark:#3e454b;
+    --color-very-dark:#23292e;
+}    
