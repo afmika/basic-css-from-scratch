@@ -6,29 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="styles/buttons.css">
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/grid.css">
     <title>U-Mobile</title>
+    <style>
+        /* debug */
+        .flex-container {
+            background-color: peru;
+        }
+        .flex-container > [class*="flex-it"] {
+            border: 1px Solid black;
+            background-color: white;
+        }
+    </style>
 </head>
 <body>
-    <div class="global_container center">
-        <form action="#" method="post">
-            <div class="img-container">
-                <img src="assets/u-mobile.logo.png" class="logo">
-            </div>
-            <div class="basic-container">
-                <h2 class="text">Login</h2>
-            </div>
-            <div class="basic-container">
-                <label for="numero"><b>Votre numero</b></label>
-                <input type="text" placeholder="Numero 034XXXXXXX" name="numero" required>
-        
-                <label for="password"><b>Mot de passe</b></label>
-                <input type="password" placeholder="Votre mot de passe" name="password" required>
-                    
-                <button class="btn-large btn-color-primary" type="submit">Connexion</button>
-                <button class="btn-large btn-color-dark" type="button">Inscription</button>
-            </div>
-        </form>
+    <h3>Standard use</h3>
+    <div class="flex-container"> 
+        <div class="flex-it">1</div>
+        <div class="flex-it">2</div>
+        <div class="flex-it">3</div>
+        <div class="flex-it">4</div>
+        <div class="flex-it">5</div>
+        <div class="flex-it">6</div>
+        <div class="flex-it">7</div>
+        <div class="flex-it">8</div>
+        <div class="flex-it">9</div>
+        <div class="flex-it">10</div>
+        <div class="flex-it">11</div>
+        <div class="flex-it">12</div>
+        <div class="flex-it">13</div>
+    </div>
+
+    <h3>Push it !</h3>
+    <div class="flex-container"> 
+        <div class="flex-it">1</div>
+        <div class="flex-it">2</div>
+        <div class="flex-it">3</div>
+        <div class="flex-it push-it">5</div>
+        <div class="flex-it">5</div>
+    </div>
+
+    <h3>Advanced</h3>
+    <div class="flex-container">
+        <div class="flex-container flex-it"> 
+            <div class="flex-it">1</div>
+            <div class="flex-it">2</div>
+            <div class="flex-it push-it">3</div>
+        </div>
+        <div class="flex-container flex-it push-it"> 
+            <div class="flex-it">1</div>
+            <div class="flex-it">2</div>
+        </div>
+        <div class="flex-it">Hello</div>
     </div>
 </body>
 </html>

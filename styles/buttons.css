@@ -1,3 +1,8 @@
+/**
+ * @author afmika
+ * This project is under the MIT License
+ */
+
 /*  Hover effect */
 button:hover {
     opacity: 0.8;
@@ -16,22 +21,15 @@ button:hover {
     background-color: var(--color-success);
 }
 
-.btn-color-primary {
+/* All classes with btn-color-*/
+[class*="btn-color-"] {
     width: auto;
     padding: 10px 18px;
-    background-color: var(--color-primary);
 }
-.btn-color-dark {
-    width: auto;
-    padding: 10px 18px;
-    background-color: var(--color-dark);
-}
-
-.btn-color-very-dark {
-    width: auto;
-    padding: 10px 18px;
-    background-color: var(--color-very-dark);
-}
+.btn-color-primary {  background-color: var(--color-primary); }
+.btn-color-danger {  background-color: var(--color-danger); }
+.btn-color-dark { background-color: var(--color-dark); }
+.btn-color-very-dark { background-color: var(--color-very-dark); }
 
 /* basic style for all buttons */
 button {
@@ -41,8 +39,8 @@ button {
     border: none; /* flat design */
 }
 /* 
-    Large button (use 100% the size of its container)
-    Can be very useful for login forms 
+    Large buttons (use 100% the size of its container)
+    Useful for form buttons 
  */
 .btn-large {
     cursor: pointer;

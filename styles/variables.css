@@ -1,12 +1,23 @@
+/**
+ * @author afmika
+ *
+ * This project is under the MIT License
+ */
+
 /*
     All CSS variables of this small framework will be put in there
 */
 :root {
-    /* Color from bootstrap */
+    /* Colors stolen from ... (yeah) */
     --color-primary: #337ab7;
     --color-success: #5cb85c;
     --color-danger: #d9534f;
-    --color-border:#d8d8d8;
+    --color-border:#f0eeee;
     --color-dark:#3e454b;
     --color-very-dark:#23292e;
-}    
+
+    --standard-padding: 16px;
+    /* Column size */
+    --standard-column-width: 8.33%; /* 100 / 12 cols ~ 8.33 each*/
+    --standard-flex-margin: 12px;
+}

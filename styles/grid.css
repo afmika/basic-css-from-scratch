@@ -1,37 +1,18 @@
-/* Flex mode */
+/**
+ * @author afmika
+ * This project is under the MIT License
+ */
+
 .flex-container {
     display: flex;
-}
-/* Push the current item */
-.push-flex {
-    margin-left: auto;
+    flex-wrap: nowrap;
 }
 
-/* Meth 2 */
-body {
-    margin: 0;
+.flex-container > .flex-it {
+    width: var(--standard-column-width); /* standard width for a single column */
+    margin: var(--standard-flex-margin); /* margin between each column */
 }
-.flex-container {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.row {
-    width: auto;
-    border: 1px solid blue;
-}
-.flex-item {
-    background-color: tomato;
-    padding: 5px;
-    width: 20px;
-    height: 20px;
-    margin: 10px;
-    line-height: 20px;
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
-    text-align: center;
+
+.flex-container > .push-it {
+    margin-left: auto;
 }

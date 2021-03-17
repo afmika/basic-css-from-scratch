@@ -1,3 +1,9 @@
+/**
+ * @author afmika
+ *
+ * This project is under the MIT License
+ */
+
 .global_container {
     width: 400px;
 }
@@ -12,7 +18,7 @@ form {
 }
 
 /* Full-width inputs */
-input[type=text], input[type=password] {
+.basic-input {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -21,20 +27,20 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-.img-container {
+.basic-img-container {
     text-align: center;
     margin: 24px 0 12px 0;
 }
 
 /* Avatar image */
-img.logo {
+img.basic-logo {
     width: 30%;
     border-radius: 50%;
 }
 
 /* Add padding to containers */
 .basic-container {
-    padding: 16px;
+    padding: var(--standard-padding);
 }
 
 /* if the screen width is <= 400px */
