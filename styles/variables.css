@@ -20,4 +20,8 @@
     /* Column size */
     --standard-column-width: 8.33%; /* 100 / 12 cols ~ 8.33 each*/
     --standard-flex-margin: 12px;
+
+    /* table and global theme */
+    --standard-global-font: Arial, Helvetica, sans-serif;
+    --standard-global-color: #91b3d1;
 }

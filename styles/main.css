@@ -8,9 +8,14 @@
     width: 400px;
 }
 
-.center {
-    margin: auto;
+html, body {
+    font-family: var(--standard-global-font);
 }
+
+.center { margin: auto; }
+.txt-at-center { text-align: center; }
+.txt-at-left { text-align: left; }
+.txt-at-right { text-align: right; }
 
 /* Bordered form */
 form {
@@ -49,3 +54,9 @@ img.basic-logo {
         width: 100%;
     }
 }
+
+.text-color-primary {  color: var(--color-primary); }
+.text-color-danger {  color: var(--color-danger); }
+.text-color-dark { color: var(--color-dark); }
+.text-color-very-dark { color: var(--color-very-dark); }
+

@@ -25,6 +25,7 @@ button:hover {
 [class*="btn-color-"] {
     width: auto;
     padding: 10px 18px;
+    font-weight: bold;
 }
 .btn-color-primary {  background-color: var(--color-primary); }
 .btn-color-danger {  background-color: var(--color-danger); }
