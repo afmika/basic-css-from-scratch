@@ -8,11 +8,19 @@
     flex-wrap: nowrap;
 }
 
-.flex-container > .flex-it {
+.flex-container > .flex-it  {
     width: var(--standard-column-width); /* standard width for a single column */
     margin: var(--standard-flex-margin); /* margin between each column */
 }
 
 .flex-container > .push-it {
     margin-left: auto;
+}
+
+/* if the screen width > 600px */
+@media screen and (min-width: 600px) {
+    .flex-container > .flex-it-if-large  {
+        width: var(--standard-column-width); /* standard width for a single column */
+        margin: var(--standard-flex-margin); /* margin between each column */
+    }
 }
