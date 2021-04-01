@@ -32,6 +32,11 @@ html, body {
     box-sizing: border-box;
 }
 
+.small-input {
+    width: 25%;
+}
+
+
 .basic-img-container {
     text-align: center;
     margin: 24px 0 12px 0;
@@ -41,7 +46,7 @@ html, body {
     padding: var(--standard-padding);
 }
 
-/* if the screen width is <= 400px */
+/* if the screen width is >= 400px */
 @media screen and (max-width: 400px) {
     .global_container {
         width: 100%;
@@ -50,8 +55,19 @@ html, body {
 
 .text-color-primary {  color: var(--color-primary); }
 .text-color-success { color: var(--color-success); }
+.text-color-infos { color: var(--color-infos); }
 .text-color-danger {  color: var(--color-danger); }
 .text-color-dark { color: var(--color-dark); }
 .text-color-very-dark { color: var(--color-very-dark); }
 
 .text-bold { font : bold; }
+
+.little-margin {
+    margin-left: 12px;
+}
+
+.input-squared {
+    width: 12px;
+    height: 32px;
+    font-size: 10px;
+}

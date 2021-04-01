@@ -13,6 +13,7 @@
     --color-success: #5cb85c;
     --color-danger: #d9534f;
     --color-border:#f0eeee;
+    --color-infos:#bfc1c4;
     --color-dark:#3e454b;
     --color-very-dark:#23292e;
 
@@ -26,6 +27,7 @@
     --standard-global-color: #91b3d1;
 
     --nav-color-active: #2b73c5;
+    --nav-color-home: #283966;
     --nav-text-color: #fff;
     --nav-color-hover-active: #fff;
     --nav-color-bg: var(--standard-global-color);

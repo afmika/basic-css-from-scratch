@@ -35,3 +35,9 @@ button {
     cursor: pointer;
     width: 100%;
 }
+
+.btn-tiny {
+    cursor: pointer;
+    padding: 2px 3px;
+    margin: 1px 0;
+}
